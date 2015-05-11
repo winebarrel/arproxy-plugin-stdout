@@ -1,7 +1,6 @@
 # Arproxy::Plugin::Stdout
 
 STDOUT output plug-in for [Arproxy](https://github.com/cookpad/arproxy).
-TODO: Write a gem description
 
 ## Installation
 
@@ -22,4 +21,9 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+Arproxy.configure do |config|
+  config.adapter = "mysql2"
+  config.plugin :stdout
+end
+Arproxy.enable!
 ```
